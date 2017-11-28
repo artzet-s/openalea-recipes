@@ -1,5 +1,7 @@
 set -e
 
-cmake -DCMAKE_INSTALL_PREFIX=$PREFIX .
+cd build
+cmake -DCMAKE_INSTALL_PREFIX=$PREFIX ..
+cmake ..
 make
 make install
